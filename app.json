@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "todo-app-convex",
+    "slug": "todo-app-convex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.todoapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.yourname.todoapp"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "scheme": "todoapp",
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
