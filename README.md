@@ -3,12 +3,10 @@
 A sophisticated React Native Todo application with real-time backend integration using Convex and smooth theme switching.
 
 ## Features
-- ✅ Full CRUD operations with real-time sync
-- 🎨 Light/Dark theme with persistent preferences
-- 📱 Responsive design
-- 🔄 Drag-to-reorder functionality
-- 🗑️ Swipe-to-delete
-- 🔍 Search and filter
+- Full CRUD operations with real-time sync
+- Light/Dark theme with persistent preferences
+-  Responsive design
+
 
 ## Prerequisites
 - Node.js v18+
@@ -69,6 +67,3 @@ todo-app-convex/
 - Expo Router (Navigation)
 - AsyncStorage (Theme persistence)
 - TypeScript
-
-## License
-MIT
