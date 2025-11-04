@@ -22,6 +22,12 @@
     "scheme": "todoapp",
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "3d58017b-a7ac-471d-bdb8-73cd6b7231ac"
+      }
+    }
   }
 }
