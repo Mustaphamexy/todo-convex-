@@ -1,4 +1,3 @@
-// src/types/index.ts
 export interface Todo {
   _id: string;
   text: string;

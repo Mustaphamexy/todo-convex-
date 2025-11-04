@@ -1,4 +1,3 @@
-// src/components/todos/TodoInput.tsx - Updated with proper colors
 import React, { useState } from 'react';
 import {
   View,

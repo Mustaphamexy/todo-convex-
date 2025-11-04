@@ -1,5 +1,3 @@
-// src/contexts/ConvexProvider.tsx
-
 import React, { ReactNode } from 'react';
 import { ConvexProvider, ConvexReactClient } from 'convex/react';
 

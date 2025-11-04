@@ -1,10 +1,7 @@
-// convex/todos.ts
-
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
 import { Id } from "./_generated/dataModel";
 
-// Query to get all todos sorted by order
 export const getTodos = query({
   handler: async (ctx) => {
     const todos = await ctx.db
@@ -16,7 +13,7 @@ export const getTodos = query({
   },
 });
 
-// Query to get a single todo by ID
+//  single todo by ID
 export const getTodoById = query({
   args: { id: v.id("todos") },
   handler: async (ctx, args) => {
@@ -24,7 +21,7 @@ export const getTodoById = query({
   },
 });
 
-// Mutation to create a new todo
+//  create a new todo
 export const createTodo = mutation({
   args: {
     title: v.string(),
@@ -52,7 +49,7 @@ export const createTodo = mutation({
   },
 });
 
-// Mutation to update a todo
+// update a todo
 export const updateTodo = mutation({
   args: {
     id: v.id("todos"),
@@ -73,7 +70,7 @@ export const updateTodo = mutation({
   },
 });
 
-// Mutation to delete a todo
+//  delete a todo
 export const deleteTodo = mutation({
   args: { id: v.id("todos") },
   handler: async (ctx, args) => {
@@ -82,7 +79,7 @@ export const deleteTodo = mutation({
   },
 });
 
-// Mutation to reorder todos
+// reorder todos
 export const reorderTodos = mutation({
   args: {
     todoId: v.id("todos"),
@@ -96,7 +93,7 @@ export const reorderTodos = mutation({
   },
 });
 
-// Mutation to toggle todo completion
+// toggle todo completion
 export const toggleTodo = mutation({
   args: { id: v.id("todos") },
   handler: async (ctx, args) => {
@@ -114,7 +111,7 @@ export const toggleTodo = mutation({
   },
 });
 
-// Mutation to clear all completed todos
+// clear all completed todos
 export const clearCompleted = mutation({
   handler: async (ctx) => {
     const completedTodos = await ctx.db

@@ -1,4 +1,3 @@
-// app/index.tsx - Updated with only main background changed to color
 import React, { useState } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
 import {
@@ -18,7 +17,6 @@ import { ThemeToggle } from '../src/components/theme/ThemeToggle';
 import { Ionicons } from '@expo/vector-icons';
 import { spacing, fontSize, borderRadius } from '../src/constants/theme';
 
-// Mock data based on your Figma design
 const initialTodos = [
   { id: '1', text: 'Complete online JavaScript course', completed: true },
   { id: '2', text: 'Jog around the park 3x', completed: false },
@@ -124,7 +122,7 @@ export default function HomeScreen() {
     <View style={[styles.background, { backgroundColor: theme.background }]}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       
-      {/* Header with Background Image - LEFT UNCHANGED */}
+      {/* Header with Background Image */}
       <ImageBackground 
         source={theme.headerBackground}
         style={styles.headerBackground}
@@ -141,7 +139,7 @@ export default function HomeScreen() {
         style={styles.keyboardAvoidingView}
       >
         <View style={styles.content}>
-          {/* Add Todo Input */}
+          {/* Todo Input */}
           <View style={[
             styles.inputContainer,
             {
@@ -197,7 +195,7 @@ export default function HomeScreen() {
                 {activeTodosCount} items left
               </Text>
               
-              {/* Desktop Filters */}
+              {/* Desktop  */}
               {Platform.OS === 'web' && (
                 <View style={styles.desktopFilters}>
                   {(['all', 'active', 'completed'] as FilterType[]).map((filterType) => (
@@ -258,7 +256,7 @@ export default function HomeScreen() {
             </View>
           )}
 
-          {/* Drag Instruction */}
+          
           <Text style={[
             styles.dragInstruction,
             { color: theme.textSecondary }
